@@ -148,3 +148,12 @@ Checksum에 관한 것은 나중에 자세히 다루겠지만 간단하게 보�
 #### 3-12. Destination Address : 4 byte
 
 Destination Address도 지금까지 그래왔듯 이 패킷을 받는 목적지의 IP 주소를 저장한다.
+
+#### 3-13. IP Option : +a
+
+IP Option은 안 쓰는 것이 평범한 것이다.
+그래서 대부분 IPv4의 경우 20 byte의 길이를 가지게 된다.
+
+옵션 하나당 4 byte의 길이를 가지며 최대 10개의 옵션이 붙을 수 있으므로
+최대 + 40 byte를 가질 수 있다.
+그래서 IPv4의 최대 길이는 60 byte이다.
